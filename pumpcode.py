@@ -92,7 +92,7 @@ def saveFile(sender):
 			for i in dataread:
 				
 				if i['MR'] == openfile:
-					(prepump.text, wtmethod.text, tdd_label.text, basal_label.text, carb_label.text, isf_label.text)		=(i['prepump'], i['wt'],i['tdd'],
+					(prepump.text, wtmethod.text, tdd_label.text, basal_label.text, carb_label.text, isf_label.text)=(i['prepump'], i['wt'],i['tdd'],
 					i['basal_rate'],  i['carb_ratio'], i['isf'])
 					(ratio_input.text, isf_input.text)=(i['carb_ratio'], i['isf'])
 					view.name = i['MR'].title()
